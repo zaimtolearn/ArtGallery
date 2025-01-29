@@ -21,30 +21,108 @@
 
     <main>
       <div class="gallery-container">
-        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn prev-btn" aria-label="Previous artwork">&lt;</button>
         <div class="artwork-showcase">
           <div class="artwork-frame">
-            <!-- Images will be dynamically loaded here -->
-            <img src="./img/pic1.jpeg" alt="Artwork 1" class="artwork" />
-            <img src="./img/pic2.jpeg" alt="Artwork 2" class="artwork" />
-            <img src="./img/pic3.jpeg" alt="Artwork 3" class="artwork" />
-            <img src="./img/pic4.jpeg" alt="Artwork 4" class="artwork" />
-            <img src="./img/pic5.jpeg" alt="Artwork 5" class="artwork" />
+            <!-- Images with improved spacing -->
+            <img src="./img/pic1.jpeg" alt="Artwork 1" class="artwork" loading="lazy" />
+            <img src="./img/pic2.jpeg" alt="Artwork 2" class="artwork" loading="lazy" />
+            <img src="./img/pic3.jpeg" alt="Artwork 3" class="artwork" loading="lazy" />
+            <img src="./img/pic4.jpeg" alt="Artwork 4" class="artwork" loading="lazy" />
+            <img src="./img/pic5.jpeg" alt="Artwork 5" class="artwork" loading="lazy" />
           </div>
         </div>
-        <button class="nav-btn next-btn">&gt;</button>
+        <button class="nav-btn next-btn" aria-label="Next artwork">&gt;</button>
       </div>
       
       <div class="artwork-info">
-        <h2 id="artwork-title">Artwork Title</h2>
-        <p id="artwork-description">Description of the artwork</p>
+        <h2 id="artwork-title" class="artwork-title">Artwork Title</h2>
+        <p id="artwork-description" class="artwork-description">Description of the artwork</p>
       </div>
+
+      <section class="artist-statement">
+        <h2>Artist's Statement</h2>
+        <div class="artist-content">
+          <img src="./img/pic1.jpeg" alt="LyMaddy - Artist Portrait" class="artist-portrait" loading="lazy">
+          <div class="statement-text">
+            <p>As a digital artist, I find inspiration in the ethereal dance between light and shadow, creating pieces that bridge the gap between dreams and reality. My work explores themes of nature, emotion, and the human experience through a contemporary lens.</p>
+            <p>Each piece in this gallery represents a moment of connection—between artist and viewer, between the physical and digital worlds, between imagination and execution. I invite you to explore these works and find your own meaning within them.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add the news section -->
+      <section class="news-section">
+        <h2>Highlights</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-date">June 15, 2024</div>
+            <h3>New Collection Release</h3>
+            <p>Exploring themes of nature and technology in my latest digital art series.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          
+          <article class="news-card">
+            <div class="news-date">June 10, 2024</div>
+            <h3>Upcoming Exhibition</h3>
+            <p>Join us for an evening of art and conversation at the downtown gallery.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          
+          <article class="news-card">
+            <div class="news-date">June 5, 2024</div>
+            <h3>Artist Workshop</h3>
+            <p>Learn digital art techniques in our upcoming weekend workshop.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Add contact and social media section -->
+      <section class="contact-section">
+        <h2>Connect With Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>For inquiries about artwork, commissions, or collaborations:</p>
+            <a href="mailto:lailamdhh22@gmail.com" class="contact-link">
+              lailamdhh22@gmail.com
+            </a>
+          </div>
+          
+          <div class="social-links">
+            <h3>Follow My Journey</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Behance">
+                <i class="fab fa-behance"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 LyMaddy's Art Gallery</p>
+      <div class="footer-content">
+        <p>&copy; 2024 Lunar Art Gallery</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
     </footer>
 
+    <!-- Update Font Awesome to use the CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="./js/script.js"></script>
   </body>
 </html>
