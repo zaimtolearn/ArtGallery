@@ -117,13 +117,11 @@ h1 {
 footer {
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: calc(100% - 320px);
-  margin-left: 150px;
+  position: relative;
+  width: 100%;
+  margin-left: 0;
   background: rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
 }
 
 .modal {
@@ -184,7 +182,8 @@ footer {
 
 @media (max-width: 768px) {
   .spotify-player {
-    bottom: 70px;
+    position: fixed;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
